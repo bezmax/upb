@@ -643,7 +643,7 @@ upb_proto_reflection_library(
 proto_library(
     name = "test_cpp_proto",
     srcs = ["upb/test_cpp.proto"],
-    deps = ["@com_google_protobuf//:timestamp_proto"],
+    deps = ["@com_google_protobuf//:timestamp_proto","@com_google_protobuf//:descriptor_proto"],
 )
 
 upb_proto_library(
